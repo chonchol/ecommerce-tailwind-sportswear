@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="911.777" height="662.552" viewBox="0 0 911.777 662.552">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.86" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#79cc6e" stop-opacity="0.373"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path id="Glow" d="M503.273,182.144c114.98,0-86.893-96.662-86.893,18.318s-93.21,208.19-208.19,208.19S0,315.442,0,200.462,388.293,182.144,503.273,182.144Z" transform="matrix(0.996, 0.087, -0.087, 0.996, 211.664, 32.459)" fill="url(#linear-gradient)"/>
+</svg>
