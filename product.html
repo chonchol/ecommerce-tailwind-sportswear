@@ -107,13 +107,6 @@
                 background-blend-mode: overlay;
             }
 
-            /* .logo-wrapper > .logo-item{
-                flex:100%;
-            }  */
-   
-
-
-
         }
 
     </style>
@@ -133,11 +126,13 @@
                         <li class="flex justify-between items-center gap-3">
                             <a href="#"><img src="images/bars.svg" alt=""></a>
                         </li>
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Home</a></li>
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Shop</a></li>
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Our story</a></li>
-                        <li><a href="" class="rounded py-1 px-2 bg-bgmenu hover:bg-bgmenu hidden lg:block">Blog</a></li>
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Help</a></li>
+                        <li><a href="home.html" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Home</a></li>
+                        <li><a href="shop.html" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Shop</a></li>
+                        <li><a href="#" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Our story</a></li>
+                        <li><a href="product.html"
+                                class="rounded py-1 px-2 bg-bgmenu hover:bg-bgmenu hidden lg:block">Product</a></li>
+                        <li><a href="contact.html" class="rounded py-1 px-2 hover:bg-bgmenu hidden lg:block">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="menu-middle">
@@ -145,9 +140,9 @@
                 </div>
                 <div class="menu-right">
                     <ul class="mainmenu flex justify-between text-[13px] items-center gap-6">
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden md:block">Social</a></li>
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden md:block">Search</a></li>
-                        <li><a href="" class="rounded py-1 px-2 hover:bg-bgmenu hidden md:block">Wishlist</a></li>
+                        <li><a href="#" class="rounded py-1 px-2 hover:bg-bgmenu hidden md:block">Social</a></li>
+                        <li><a href="#" class="rounded py-1 px-2 hover:bg-bgmenu hidden md:block">Search</a></li>
+                        <li><a href="#" class="rounded py-1 px-2 hover:bg-bgmenu hidden md:block">Wishlist</a></li>
                         <li>
                             <select name="currency" id=""
                                 class="bg-transparent focus:outline-none text-[13px] hidden md:block">
@@ -157,8 +152,7 @@
                             </select>
                         </li>
                         <li>
-                            <a href=""
-                                class="rounded py-1 px-3 border-0 md:border-r md:border-l border-l-[#e2e2e2] border-r-[#e2e2e2]">
+                            <a href="" class="rounded py-1 px-3">
                                 <img src="images/user.svg" alt="">
                             </a>
                         </li>
@@ -213,25 +207,34 @@
                             <img src="images/product-8.png" alt="Product Image" class="w-full rounded-lg">
                         </div>
                     </div>
-                    <div class="show-btn absolute -bottom-4 md:bottom-0 lg:bottom-20 left-[27%] md:left-[37%] lg:left-[42%]">
-                        <button class="bg-[#EBEAE5] text-sm text-black py-3 px-10 rounded-full flex justify-between items-center gap-3">
-                             Show more
-                             <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#000000" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    <div
+                        class="show-btn absolute -bottom-4 md:bottom-0 lg:bottom-20 left-[27%] md:left-[37%] lg:left-[42%]">
+                        <button
+                            class="bg-[#EBEAE5] text-sm text-black py-3 px-10 rounded-full flex justify-between items-center gap-3">
+                            Show more
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+                                <path fill="#000000"
+                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                            </svg>
                         </button>
                     </div>
                     <div class="back-btn absolute top-5 left-5">
                         <button class="flex justify-between items-center gap-3 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#000000" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                                <path fill="#000000"
+                                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                            </svg>
                             Back
                         </button>
                     </div>
 
                 </div>
-            
+
                 <div class="product-content-details mt-6 lg:mt-0 text-black rounded-lg w-full lg:w-1/3">
 
                     <div class="flex justify-between mb-5 items-center">
-                        <div class="flex justify-start md:justify-between items-center space-x-5 md:space-x-3 text-[#454545] text-xs">
+                        <div
+                            class="flex justify-start md:justify-between items-center space-x-5 md:space-x-3 text-[#454545] text-xs">
                             <img src="images/home-grid.svg" alt="" class="w-3 h-3">
                             <a href="">Home</a>
                             <svg xmlns="http://www.w3.org/2000/svg" height="12" width="8.75" viewBox="0 0 320 512">
@@ -245,7 +248,7 @@
                             </svg>
                             <a href="">Shoes</a>
                         </div>
-        
+
                         <div class="flex justify-between">
                             <div class="product-reviews flex justify-center items-center">
                                 <img src="images/star.svg" alt="">
@@ -264,7 +267,9 @@
 
 
                     <div class="product-price flex items-start justify-between mb-8 space-x-3">
-                        <p class="product-made text-sm text-[#121212]">Sneaker features advanced cushioning technology, ensuring plush comfort with every stride. The breathable mesh upper keeps your feet cool and dry, even during intense activities.</p>
+                        <p class="product-made text-sm text-[#121212]">Sneaker features advanced cushioning technology,
+                            ensuring plush comfort with every stride. The breathable mesh upper keeps your feet cool and
+                            dry, even during intense activities.</p>
                         <a href="" class="flex justify-center items-center">
                             <img src="images/share.svg" alt="" class="mr-3">
                             <span>Share</span>
@@ -292,19 +297,23 @@
                         <div class="product-variation flex items-center space-x-2 mb-8 mt-2">
                             <label class="radio-item block relative py-0 px-6  text-2xl cursor-pointer">
                                 <input type="radio" name="radiom" class="absolute opacity-0 cursor-pointer">
-                                <span class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                                <span
+                                    class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                             </label>
                             <label class="radio-item block relative py-0 px-6  text-2xl cursor-pointer">
                                 <input type="radio" name="radiom" class="absolute opacity-0 cursor-pointer" checked="">
-                                <span class="check bg-black absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                                <span
+                                    class="check bg-black absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                             </label>
                             <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                                 <input type="radio" name="radiom" class="absolute opacity-0 cursor-pointer">
-                                <span class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                                <span
+                                    class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                             </label>
                             <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                                 <input type="radio" name="radiom" class="absolute opacity-0 cursor-pointer">
-                                <span class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                                <span
+                                    class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                             </label>
                         </div>
                     </div>
@@ -329,22 +338,36 @@
                     </div>
 
                     <div class="add-to-cart-area flex justify-between gap-2 items-center mb-7">
-                        <div class="flex items-center gap-x-1.5 border border-black border-opacity-5 rounded-full px-6 py-3">
-                            <button type="button" class="size-4 inline-flex justify-center items-center gap-x-1 text-sm font-medium focus:outline-none disabled:opacity-50 disabled:pointer-events-none" tabindex="-1" aria-label="Decrease" data-hs-input-number-decrement="">
-                                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
+                        <div
+                            class="flex items-center gap-x-1.5 border border-black border-opacity-5 rounded-full px-6 py-3">
+                            <button type="button"
+                                class="size-4 inline-flex justify-center items-center gap-x-1 text-sm font-medium focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                                tabindex="-1" aria-label="Decrease" data-hs-input-number-decrement="">
+                                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
                                 </svg>
                             </button>
-                            <input class="p-0 w-6 bg-transparent border-0 text-base text-center focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" style="-moz-appearance: textfield;" type="number" aria-roledescription="Number field" value="3" data-hs-input-number-input="">
-                            <button type="button" class="size-4 inline-flex justify-center items-center gap-x-1 text-sm font-medium focus:outline-none disabled:opacity-50 disabled:pointer-events-none" tabindex="-1" aria-label="Increase" data-hs-input-number-increment="">
-                                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
+                            <input
+                                class="p-0 w-6 bg-transparent border-0 text-base text-center focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none"
+                                style="-moz-appearance: textfield;" type="number" aria-roledescription="Number field"
+                                value="3" data-hs-input-number-input="">
+                            <button type="button"
+                                class="size-4 inline-flex justify-center items-center gap-x-1 text-sm font-medium focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                                tabindex="-1" aria-label="Increase" data-hs-input-number-increment="">
+                                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
                                 </svg>
                             </button>
                         </div>
 
-                        <button class="addto-cart-btn bg-black text-white text-sm text-opacity-85 py-4 px-14 md:px-28 rounded rounded-3xl">Add to Cart</button>
+                        <button
+                            class="addto-cart-btn bg-black text-white text-sm text-opacity-85 py-4 px-14 md:px-28 rounded rounded-3xl">Add
+                            to Cart</button>
                         <a href="">
                             <img src="images/heart.svg" alt="">
                         </a>
@@ -361,11 +384,21 @@
                     <div class="policy mb-12">
                         <ul class="text-sm">
                             <li class="mb-3 flex justify-start space-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#373738" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-                                 <span>Easy Return Policy</span></li>
-                            <li class="mb-3 flex justify-start space-x-3"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#373738" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-                                <span>Free Shipping For Orders Above 299.</span> </li>
-                            <li class="mb-3 ml-6">Pickup Available at Santa Monica <a href="" class="underline ml-6">Check Availability</a> </li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                                    <path fill="#373738"
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <span>Easy Return Policy</span>
+                            </li>
+                            <li class="mb-3 flex justify-start space-x-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="14" width="12.25" viewBox="0 0 448 512">
+                                    <path fill="#373738"
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <span>Free Shipping For Orders Above 299.</span>
+                            </li>
+                            <li class="mb-3 ml-6">Pickup Available at Santa Monica <a href=""
+                                    class="underline ml-6">Check Availability</a> </li>
                         </ul>
                     </div>
 
@@ -374,13 +407,17 @@
                     <div class="desc-main mt-4 mb-11">
                         <div class="flex justify-between items-center mb-7">
                             <h4>Description</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#000000" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                                <path fill="#000000"
+                                    d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                            </svg>
                         </div>
-    
+
                         <div class="desc-content text-sm text-[#121212]">
-                            <p class="product-desc mb-5">Whether you’re hitting the gym, strolling through the city, or just hanging out with friends, these sneakers have got you covered.
+                            <p class="product-desc mb-5">Whether you’re hitting the gym, strolling through the city, or
+                                just hanging out with friends, these sneakers have got you covered.
                             </p>
-        
+
                             <ul class="list-disc ml-4">
                                 <li class="mb-2">Comfortable Cushioning</li>
                                 <li class="mb-2">Breathable Design</li>
@@ -392,32 +429,45 @@
                     <hr class="border border-black border-opacity-15">
                     <div class="product-shipping flex justify-between my-6">
                         <h4 class="text-[#343538] text-[15px]">Materials</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                            <path fill="#000000"
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
                     </div>
                     <hr class="border border-black border-opacity-15">
                     <div class="product-shipping flex justify-between my-6">
                         <h4 class="text-[#343538] text-[15px]">Shipping and Returns</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                            <path fill="#000000"
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
                     </div>
                     <hr class="border border-black border-opacity-15">
                     <div class="product-shipping flex justify-between my-6">
                         <h4 class="text-[#343538] text-[15px]">Care Instructions</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                            <path fill="#000000"
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
                     </div>
                     <hr class="border border-black border-opacity-15">
                     <div class="product-shipping flex justify-between my-6">
                         <h4 class="text-[#343538] text-[15px]">Size</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                            <path fill="#000000"
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
                     </div>
                     <hr class="border border-black border-opacity-15">
 
                 </div>
 
             </div>
-    <!-- </div> -->
+            <!-- </div> -->
         </section>
 
-        <section class="design-comfort px-8 md:px-12 bg-[url('images/Glow-gs.png')] bg-no-repeat bg-[length:100%_115%] bg-center pt-14 pb-10">
+        <section
+            class="design-comfort px-8 md:px-12 bg-[url('images/Glow-gs.png')] bg-no-repeat bg-[length:100%_115%] bg-center pt-14 pb-10">
 
             <h2 class="text-[42px] text-black font-semibold leading-[40px] mb-12">Designed for comfort.</h2>
 
@@ -426,41 +476,47 @@
                 <div class="border-t border-t-black border-opacity-15 pt-6 pb-16">
                     <div class="flex">
                         <h2 class="text-black text-[21px] font-semibold w-2/5 md:w-1/2 lg:w-1/4">For You.</h2>
-                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Elevate your footwear game with our Swiss Sneakers. Designed for those who demand both style and performance.</p>
+                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Elevate your footwear game with our
+                            Swiss Sneakers. Designed for those who demand both style and performance.</p>
                     </div>
                 </div>
                 <div class="border-t border-t-black border-opacity-15 pt-6 pb-16">
                     <div class="flex">
                         <h2 class="text-black text-[21px] font-semibold w-2/5 md:w-1/2 lg:w-1/4">Sleek Design</h2>
-                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">These sneakers are a must-have addition to your collection.</p>
+                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">These sneakers are a must-have
+                            addition to your collection.</p>
                     </div>
                 </div>
-          
+
                 <!-- Second Row -->
                 <div class="border-t border-t-black border-opacity-15 pt-6 pb-16">
                     <div class="flex">
                         <h2 class="text-black text-[21px] font-semibold w-2/5 md:w-1/2 lg:w-1/4">Comfortable</h2>
-                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Known for their cushioned insoles, providing comfort and support for all-day wear.</p>
+                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Known for their cushioned insoles,
+                            providing comfort and support for all-day wear.</p>
                     </div>
                 </div>
                 <div class="border-t border-t-black border-opacity-15 pt-6 pb-16">
                     <div class="flex">
                         <h2 class="text-black text-[21px] font-semibold w-2/5 md:w-1/2 lg:w-1/4">Natural</h2>
-                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Breathable mesh or perforated materials to keep your feet cool and sweat-free.</p>
+                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Breathable mesh or perforated
+                            materials to keep your feet cool and sweat-free.</p>
                     </div>
                 </div>
-          
+
                 <!-- Third Row -->
                 <div class="border-t border-t-black border-opacity-15 pt-6 pb-16">
                     <div class="flex">
                         <h2 class="text-black text-[21px] font-semibold w-2/5 md:w-1/2 lg:w-1/4">Durable</h2>
-                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Sneakers often feature sturdy rubber outsoles that provide excellent traction and durability.</p>
+                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Sneakers often feature sturdy rubber
+                            outsoles that provide excellent traction and durability.</p>
                     </div>
                 </div>
                 <div class="border-t border-t-black border-opacity-15 pt-6 pb-16">
                     <div class="flex">
                         <h2 class="text-black text-[21px] font-semibold w-2/5 md:w-1/2 lg:w-1/4">Customizable</h2>
-                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Some sneakers have adjustable features, like straps or laces, allowing you to customize the fit to your liking.</p>
+                        <p class="text-base text-[#121212] w-3/5 md:w-1/2 lg:w-3/4">Some sneakers have adjustable
+                            features, like straps or laces, allowing you to customize the fit to your liking.</p>
                     </div>
                 </div>
             </div>
@@ -478,7 +534,9 @@
                         </div>
                         <div class="mt-8">
                             <h3 class="text-[21px] mb-5">Shock Absorption</h3>
-                            <p class="text-[#121212] leading-[21px] pr-0 lg:pr-24">Our sneakers feature responsive shock-absorbing technology, reducing the impact on your joints during high-impact activities.</p>
+                            <p class="text-[#121212] leading-[21px] pr-0 lg:pr-24">Our sneakers feature responsive
+                                shock-absorbing technology, reducing the impact on your joints during high-impact
+                                activities.</p>
                         </div>
                     </div>
                     <div class="cat-content">
@@ -488,7 +546,8 @@
 
                         <div class="mt-8">
                             <h3 class="text-[21px] mb-5">Supportive Heel</h3>
-                            <p class="text-[#121212] leading-[21px] pr-0 lg:pr-24">The supportive heel counter stabilizes your foot, providing extra support and preventing overpronation</p>
+                            <p class="text-[#121212] leading-[21px] pr-0 lg:pr-24">The supportive heel counter
+                                stabilizes your foot, providing extra support and preventing overpronation</p>
                         </div>
 
                     </div>
@@ -498,7 +557,9 @@
                         </div>
                         <div class="mt-8">
                             <h3 class="text-[21px] mb-5">Water-Resistant</h3>
-                            <p class="text-[#121212] leading-[21px] pr-0 lg:pr-24">Some sneakers are designed to repel water, keeping your feet dry in wet conditions. Certain sneakers have reflective elements for improved visibility during nighttime activities.</p>
+                            <p class="text-[#121212] leading-[21px] pr-0 lg:pr-24">Some sneakers are designed to repel
+                                water, keeping your feet dry in wet conditions. Certain sneakers have reflective
+                                elements for improved visibility during nighttime activities.</p>
                         </div>
                     </div>
                 </div>
@@ -510,16 +571,23 @@
                 <h2 class="text-black text-[42px]">Latest Reviews</h2>
                 <div class="reviews-content flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0 mt-14">
                     <div class="left-content w-full md:w-1/2 lg:w-2/5">
-                        <div class="w-full md:w-4/5 border border-[#707070] border-opacity-10 rounded-lg pt-7 px-6 pb-5 ">
+                        <div
+                            class="w-full md:w-4/5 border border-[#707070] border-opacity-10 rounded-lg pt-7 px-6 pb-5 ">
                             <span class="text-sm text-[#707070] text-opacity-60">Based on 13 Reviews</span>
                             <div class="review-trustpilot flex items-center space-x-2 my-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#000000" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512">
+                                    <path fill="#000000"
+                                        d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
                                 <hr class="border-black w-7 border">
                                 <p class="text-sm text-black font-semibold">4.6 Trustpilot Reviews</p>
                             </div>
                             <h4 class="text-black font-semibold text-[18px] mb-5">Best Rated Sportswear Company</h4>
-                            <p class="mb-10">We've tirelessly pursued the perfect balance between function and fasion, making our mark in the sportswear industry.</p>
-                            <button class="bg-[#ebeae5] rounded-full py-5 px-20 text-sm text-black w-full font-semibold">Write a Review</button>
+                            <p class="mb-10">We've tirelessly pursued the perfect balance between function and fasion,
+                                making our mark in the sportswear industry.</p>
+                            <button
+                                class="bg-[#ebeae5] rounded-full py-5 px-20 text-sm text-black w-full font-semibold">Write
+                                a Review</button>
                         </div>
                     </div>
                     <div class="right-content w-full md:w-1/2 lg:w-3/5 mr-0 lg:mr-16">
@@ -528,7 +596,7 @@
                                 <div>
                                     <p class="name text-sm text-black">Alex S.</p>
                                     <p class="text-xs px-2 rounded-full text-black bg-[#e3e6eb]">Verified Buyer</p>
-    
+
                                 </div>
                                 <div class="product-reviews flex justify-center ">
                                     <img src="images/star.svg" alt="">
@@ -538,7 +606,9 @@
                                     <img src="images/star.svg" alt="">
                                 </div>
                             </div>
-                            <p class="text-black text-base leading-[24px] mt-5 mb-10">I’m in love with my Swiss Sneakers They’re not only stylish but also incredibly comfortable. Perfect for my daily runs and casual outings. I bought a pair of Swiss.</p>
+                            <p class="text-black text-base leading-[24px] mt-5 mb-10">I’m in love with my Swiss Sneakers
+                                They’re not only stylish but also incredibly comfortable. Perfect for my daily runs and
+                                casual outings. I bought a pair of Swiss.</p>
                             <hr class="border border-[#707070] border-opacity-10">
                         </div>
 
@@ -547,7 +617,7 @@
                                 <div>
                                     <p class="name text-sm text-black">Daniel L.</p>
                                     <p class="text-xs px-2 rounded-full text-black bg-[#e3e6eb]">Verified Buyer</p>
-    
+
                                 </div>
                                 <div class="product-reviews flex justify-center ">
                                     <img src="images/star.svg" alt="">
@@ -557,7 +627,9 @@
                                     <img src="images/star.svg" alt="">
                                 </div>
                             </div>
-                            <p  class="text-black text-base leading-[24px] mt-5 mb-10">I’ve tried a lot of sneakers, but Swiss truly impressed me. The quality is top-notch, and they’ve become my go-to choice for both work and play.  </p>
+                            <p class="text-black text-base leading-[24px] mt-5 mb-10">I’ve tried a lot of sneakers, but
+                                Swiss truly impressed me. The quality is top-notch, and they’ve become my go-to choice
+                                for both work and play. </p>
                             <hr class="border border-[#707070] border-opacity-10">
                         </div>
 
@@ -566,7 +638,7 @@
                                 <div>
                                     <p class="name text-sm text-black">Emily F.</p>
                                     <p class="text-xs px-2 rounded-full text-black bg-[#e3e6eb]">Verified Buyer</p>
-    
+
                                 </div>
                                 <div class="product-reviews flex justify-center ">
                                     <img src="images/star.svg" alt="">
@@ -576,12 +648,19 @@
                                     <img src="images/star.svg" alt="">
                                 </div>
                             </div>
-                            <p  class="text-black text-base leading-[24px] mt-5">I received fantastic customer service from Swiss. They helped me fint the right size, and my sneakers arrived promptly. I couldn't be happier with my purchased! They're stylish.</p>
+                            <p class="text-black text-base leading-[24px] mt-5">I received fantastic customer service
+                                from Swiss. They helped me fint the right size, and my sneakers arrived promptly. I
+                                couldn't be happier with my purchased! They're stylish.</p>
                         </div>
 
 
-                        <button class="bg-[#ebeae5] rounded-full py-5 text-sm text-black w-full font-semibold flex justify-center items-center gap-3"> Load more 
-                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#000000" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        <button
+                            class="bg-[#ebeae5] rounded-full py-5 text-sm text-black w-full font-semibold flex justify-center items-center gap-3">
+                            Load more
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+                                <path fill="#000000"
+                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                            </svg>
                         </button>
 
                     </div>
@@ -593,14 +672,15 @@
         <section class="suggested-shop-products mt-20 md:mt-32 px-8 md:px-12">
             <div class="suggested-shop-product-head flex flex-col md:flex-row justify-between mb-8 md:mb-12 gap-8">
                 <h2 class="text-[42px] font-bold leading-[40px]">Suggested for you</h2>
-                <ul class="flex justify-start md:justify-between items-center space-x-10 md:space-x-7 text-[15px] list-disc">
+                <ul
+                    class="flex justify-start md:justify-between items-center space-x-10 md:space-x-7 text-[15px] list-disc">
                     <li><a href="">Related Products</a></li>
                     <li class="text-[#717171] last:list-none"><a href="">Recently Viewed</a></li>
                 </ul>
             </div>
 
             <div class="grid grid-cols-2 justify-between gap-4 lg:grid-cols-4">
-            <!-- <div class="shop-pr-content flex flex-col md:flex-row justify-between gap-2"> -->
+                <!-- <div class="shop-pr-content flex flex-col md:flex-row justify-between gap-2"> -->
                 <div class="shop-item mb-5 lg:mb-0 relative">
                     <div class="group relative">
                         <img src="images/shop-1.png" alt="" class="w-full">
@@ -608,7 +688,8 @@
                                 translate-y-1 ease-in-out invisible 
                                 absolute group-hover:visible group-hover:translate-y-0 bottom-0 mb-3 md:mb-6 w-full">
                             <div class="menu-size justify-between px-5 hidden md:block">
-                                <ul class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
+                                <ul
+                                    class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
                                     <li><a href="" class="px-5 py-1 rounded-full">X</a></li>
                                     <li><a href="" class="bg-black text-white py-1 px-5 rounded-full">S</a></li>
                                     <li><a href="" class="px-5 py-1 rounded-full">M</a></li>
@@ -617,7 +698,8 @@
                             </div>
 
                             <div class="mt-5 px-5">
-                                <button class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
+                                <button
+                                    class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
                                     Quick View
                                 </button>
                             </div>
@@ -644,10 +726,12 @@
                     <hr class="border-b border-b-[#707070] border-opacity-15">
                     <p class="text-[11px]">£187.90</p>
 
-                    <div class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
+                    <div
+                        class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio1" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio1" class="absolute opacity-0 cursor-pointer" checked="">
@@ -655,11 +739,13 @@
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio1" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio1" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                     </div>
 
@@ -672,7 +758,8 @@
                                 translate-y-1 ease-in-out invisible 
                                 absolute group-hover:visible group-hover:translate-y-0 bottom-0 mb-3 md:mb-6 w-full">
                             <div class="menu-size justify-between px-5 hidden md:block">
-                                <ul class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
+                                <ul
+                                    class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
                                     <li><a href="" class="px-5 py-1 rounded-full">X</a></li>
                                     <li><a href="" class="bg-black text-white py-1 px-5 rounded-full">S</a></li>
                                     <li><a href="" class="px-5 py-1 rounded-full">M</a></li>
@@ -681,7 +768,8 @@
                             </div>
 
                             <div class="mt-5 px-5">
-                                <button class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
+                                <button
+                                    class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
                                     Quick View
                                 </button>
                             </div>
@@ -709,10 +797,12 @@
                     <p class="text-[11px]">£187.90</p>
 
 
-                    <div class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
+                    <div
+                        class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio2" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio2" class="absolute opacity-0 cursor-pointer" checked="">
@@ -720,11 +810,13 @@
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio2" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio2" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                     </div>
 
@@ -736,7 +828,8 @@
                                 translate-y-1 ease-in-out invisible 
                                 absolute group-hover:visible group-hover:translate-y-0 bottom-0 mb-3 md:mb-6 w-full">
                             <div class="menu-size justify-between px-5 hidden md:block">
-                                <ul class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
+                                <ul
+                                    class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
                                     <li><a href="" class="px-5 py-1 rounded-full">X</a></li>
                                     <li><a href="" class="bg-black text-white py-1 px-5 rounded-full">S</a></li>
                                     <li><a href="" class="px-5 py-1 rounded-full">M</a></li>
@@ -745,7 +838,8 @@
                             </div>
 
                             <div class="mt-5 px-5">
-                                <button class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
+                                <button
+                                    class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
                                     Quick View
                                 </button>
                             </div>
@@ -772,10 +866,12 @@
                     <hr class="border-b border-b-[#707070] border-opacity-15">
                     <p class="text-[11px]">£187.90</p>
 
-                    <div class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
+                    <div
+                        class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio3" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio3" class="absolute opacity-0 cursor-pointer" checked="">
@@ -783,11 +879,13 @@
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio3" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio3" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                     </div>
                 </div>
@@ -798,7 +896,8 @@
                                 translate-y-1 ease-in-out invisible 
                                 absolute group-hover:visible group-hover:translate-y-0 bottom-0 mb-3 md:mb-6 w-full">
                             <div class="menu-size justify-between px-5 hidden md:block">
-                                <ul class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
+                                <ul
+                                    class="flex justify-between items-center gap-3 bg-white rounded-full p-3 text-sm text-[#13210e] font-bold">
                                     <li><a href="" class="px-5 py-1 rounded-full">X</a></li>
                                     <li><a href="" class="bg-black text-white py-1 px-5 rounded-full">S</a></li>
                                     <li><a href="" class="px-5 py-1 rounded-full">M</a></li>
@@ -807,7 +906,8 @@
                             </div>
 
                             <div class="mt-5 px-5">
-                                <button class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
+                                <button
+                                    class="bg-white w-full text-[#261212] rounded-full px-10 md:px-28 text-[11px] py-1 md:py-3">
                                     Quick View
                                 </button>
                             </div>
@@ -834,10 +934,12 @@
                     <hr class="border-b border-b-[#707070] border-opacity-15">
                     <p class="text-[11px]">£187.90</p>
 
-                    <div class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
+                    <div
+                        class="product-slider-btn flex items-center mb-8 mt-3 flex-wrap gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-1">
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio4" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor1 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio4" class="absolute opacity-0 cursor-pointer" checked="">
@@ -845,11 +947,13 @@
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio4" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor2 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                         <label class="radio-item block relative py-0 px-6 text-2xl cursor-pointer">
                             <input type="radio" name="radio4" class="absolute opacity-0 cursor-pointer">
-                            <span class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
+                            <span
+                                class="check bg-radiocolor3 absolute top-0 left-0 h-hradio w-wradio rounded-full"></span>
                         </label>
                     </div>
                 </div>
